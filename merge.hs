@@ -4,7 +4,7 @@
 -- list become empty.
 merge :: Ord a => [a] -> [a] -> [a]
 merge [] xs = xs
-merge ys[] = ys
+merge ys[] = ys merge [2,6,9] [10,13,4]
 
 -- this is the function definition which sorts each element when merging
 -- it gets the first element of the second list and compares it with the first element of
