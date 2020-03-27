@@ -12,6 +12,6 @@ merge ys[] = ys
 -- if the first element of the second list is lesser it is added to the front of the  list via 'x:'
 -- and if it is not then the first element of the first list is added to the front of the list via 'y:'
 -- this process is recursively repeated till the end
-merge (x:xs) (y:ys)
+merge first @ (x:xs) second @ (y:ys)
    | x <y = x :merge xs (y:ys)
    | otherwise = y : merge ys (x:xs)
